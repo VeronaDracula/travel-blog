@@ -1,0 +1,29 @@
+.app {
+    display: flex;
+    flex-direction: column;
+    // background-color: #282c34;
+    min-height: 100vh;
+    background-color: var(--main-light);
+
+    font-family: Inter;
+    font-style: normal;
+    box-sizing: border-box;
+}
+
+//colors
+:root {
+
+    --btn: #DD2242;
+
+
+    --main-light: #fff;
+    --main-dark: #282c34;
+    --main-bg-color: #EBF5FB;
+    --line-color: #AED6F1;
+    --item-active: #85C1E9;
+    --white: #ffffff;
+    --dark-color: #2E86C1;
+    --text-regular: #1B2631;
+    --error: #A93226;
+    --btn: #5dade2;
+}

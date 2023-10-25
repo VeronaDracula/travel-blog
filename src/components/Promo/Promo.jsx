@@ -28,7 +28,7 @@ function Promo() {
             <div className={styles.promo__container}>
                 <h1 className={styles.promo__title}>Мои путешествия</h1>
                 <p className={styles.promo__text}>Приглашаю вас вместе со мной отправиться изучать нашу планету</p>
-                <MainButton text='Начать путешествие' />
+                {/* <MainButton text='Начать путешествие' /> */}
             </div>
         </section>
     );

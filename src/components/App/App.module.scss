@@ -1,14 +1,13 @@
 .app {
     display: flex;
     flex-direction: column;
-    // background-color: #282c34;
     min-height: 100vh;
-    background-color: var(--main-light);
 
     font-family: Inter;
     font-style: normal;
     box-sizing: border-box;
 }
+
 
 //colors
 :root {

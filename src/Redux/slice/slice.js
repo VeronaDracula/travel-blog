@@ -1,38 +1,41 @@
 import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
-    data: {
-        amountOfAdults: 1,
-        amountOfChildren: 0,
-        amountOfChildrenFive: 0,
-        typeOfRoom: 'Эконом',
-        typePrice: 1800,
-        amountOfNights: 1,
-        insurance: false,
-        total: 1800,
-
-        surname: {error: false, text: ''},
-        name: {error: false, text: ''},
-        nameOfFather: '',
-        phone: {error: false, text: ''},
-        date: {error: false, text: ''}
-    },
+    isLoading: false,
+    articles: [],
 };
 
-export const testSlice = createSlice({
-    name: 'test',
+export const blogSlice = createSlice({ 
+    name: 'blog',
     initialState,
     reducers: {
-        setData: (state, action) => {
-            if(action.payload.type === 'removeDataClose') {
-                state.data = initialState.data;
-            }
-            else {
-                state.data[action.payload.type] = action.payload.value;
-            }
+        setArticles: (state, action) => {
+            state.articles = action.payload;
         },
-    }
+
+        // setTest: (state, action) => {
+        // state.posts = [...action.payload]; 
+        // },
+
+        // deletePostSlice: (state, action) => {
+        //     state.posts = state.posts.filter((item) => item.id !== action.payload);
+        // },
+    }, 
+    // extraReducers: (builder) => {
+    //   builder
+    //     .addCase(getCompanyInfo.pending, (state) => {
+    //       state.isLoading = true;
+    //     })
+    //     .addCase(getCompanyInfo.fulfilled, (state) => {
+    //       state.isLoading = false;
+    //     })
+    //     .addCase(getCompanyInfo.rejected, (state) => {
+    //       state.isLoading = false;
+    //     })
+    // }
 })
 
-export const { actions: testActions } = testSlice;
-export const { reducer: testReducer } = testSlice;
+export const { actions: blogActions } = blogSlice;
+export const { reducer: blogReducer } = blogSlice;
+
+// export default testSlice.reducer

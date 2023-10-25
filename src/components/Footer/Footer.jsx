@@ -1,4 +1,5 @@
 import React, { useContext, useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 import styles from './Footer.module.scss';
 
@@ -20,6 +21,8 @@ function Footer() {
 
     return (
         <section className={styles.footer}>
+
+            <Link to="/signin">Мое логово</Link>
 
 
         </section>

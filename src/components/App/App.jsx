@@ -54,15 +54,15 @@ function App() {
                             component={Personal}
                         /> */}
 
-        <Route path='/signin' element={<Login />} />
+        <Route path='travel-blog/signin' element={<Login />} />
 
-        <Route path='/personal/:section?' element={<Personal />} />
+        <Route path='travel-blog/personal/:section?' element={<Personal />} />
 
-        <Route path='/articles' element={<ArticleList />} />
+        <Route path='travel-blog/articles' element={<ArticleList />} />
 
-        <Route path='/article/:id' element={<Article />} />
+        <Route path='travel-blog/article/:id' element={<Article />} />
 
-        <Route path='/' exact element={<Content />} />
+        <Route path='/travel-blog' exact element={<Content />} />
 
         <Route path='*' element={<NotFound />} />
       </Routes>

@@ -1,14 +1,44 @@
 {
-    "articles": [
-        {
-            "id": 1,
-            "title": "CopyRight Automatico",
-            "text": "вставьте следующий код ниже, где при монтировании компонента в реакции мы выполняем запрос с «выборкой» и последовательно используем «карту» для возврата каждого элемента."
-        },
-        {
-            "id": 2,
-            "title": "HtmlWebpackPlugin Multiples HTML files",
-            "text": "вставьте следующий код ниже, где при монтировании компонента в реакции мы выполняем возврата каждого элемента."
-        }
-    ]
+  "articles": [
+    {
+      "id": 1,
+      "name": "Австралия",
+      "text": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit, totam. Tempora animi, ratione pariatur nulla quas aliquam iure temporibus fugiat voluptates illum? In impedit culpa nihil veritatis minima esse eveniet!",
+      "img": "https://images.unsplash.com/photo-1570299437488-d430e1e677c7?auto=format&fit=crop&q=80&w=1925&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "id": 2,
+      "name": "Турция",
+      "text": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit, totam. Tempora animi, ratione pariatur nulla quas aliquam iure temporibus fugiat voluptates illum? In impedit culpa nihil veritatis minima esse eveniet!",
+      "img": "https://plus.unsplash.com/premium_photo-1661955588369-b0d28de38b45?auto=format&fit=crop&q=80&w=2071&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "id": 3,
+      "name": "Сербия",
+      "text": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit, totam. Tempora animi, ratione pariatur nulla quas aliquam iure temporibus fugiat voluptates illum? In impedit culpa nihil veritatis minima esse eveniet!",
+      "img": "https://images.unsplash.com/photo-1613601740367-410ae03b2ec7?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "id": 4,
+      "name": "Казахстан",
+      "text": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit, totam. Tempora animi, ratione pariatur nulla quas aliquam iure temporibus fugiat voluptates illum? In impedit culpa nihil veritatis minima esse eveniet!",
+      "img": "https://images.unsplash.com/photo-1683334086520-25890f5d05b8?auto=format&fit=crop&q=80&w=2071&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "id": 5,
+      "name": "Монголия",
+      "text": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit, totam. Tempora animi, ratione pariatur nulla quas aliquam iure temporibus fugiat voluptates illum? In impedit culpa nihil veritatis minima esse eveniet!",
+      "img": "https://images.unsplash.com/photo-1591804860948-cdb450a32b77?auto=format&fit=crop&q=80&w=2073&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "id": 1698326118714,
+      "name": "Куба",
+      "text": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit, totam. Tempora animi, ratione pariatur nulla quas aliquam iure temporibus fugiat voluptates illum? In impedit culpa nihil veritatis minima esse eveniet!",
+      "img": "https://images.unsplash.com/photo-1570299437488-d430e1e677c7?auto=format&fit=crop&q=80&w=1925&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    }
+  ],
+  "info": {
+    "img": "https://images.unsplash.com/photo-1549619856-ac562a3ed1a3?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "text": "будет игнорироваться. Будет учитываться только значение, установленное в запросе POST, но только если оно еще не занято."
+  }
 }

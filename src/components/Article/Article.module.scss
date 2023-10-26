@@ -8,3 +8,14 @@
     height: 100%;
     flex: 1 0 auto;
 }
+
+.article__imgBox {
+    width: 30px;
+    height: 30px;
+}
+
+.article__img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}

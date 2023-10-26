@@ -1,0 +1,62 @@
+.CounterTextarea {
+    &.error {
+        .CounterTextarea__textarea {
+            border: 1px solid red;
+        }
+
+        .CounterTextarea__counter {
+            color: red;
+        }
+    }
+}
+
+.CounterTextarea__textarea {
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 200px;
+    height: 70px;
+    resize: none;
+    padding: 12px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400; 
+    color: black;
+    word-wrap: break-word;
+
+    overflow-y: scroll;
+
+    &::-webkit-scrollbar-button {
+        height: auto;
+    }
+
+    &::-webkit-scrollbar {
+        width: 5px;
+    }
+    
+    &::-webkit-scrollbar-track {
+        background: transparent;
+    }
+    
+    &::-webkit-scrollbar-thumb {
+        background: grey;
+        border-radius: 4px;
+    }    
+
+    scrollbar-color: grey transparent;
+    scrollbar-width: thin;
+
+    // &:focus {
+    //     border: 1px solid var(--orange-700);
+    // }
+}
+
+.CounterTextarea__counter {
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 400;
+    color: black;
+}
+
+.CounterTextarea__counterNumber {
+    color: inherit;
+}

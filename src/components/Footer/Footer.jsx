@@ -23,6 +23,7 @@ function Footer() {
         <section className={styles.footer}>
 
             <Link to="/signin">Мое логово</Link>
+            <Link to="/personal">Мое логово</Link>
 
 
         </section>

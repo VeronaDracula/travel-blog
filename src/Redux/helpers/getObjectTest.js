@@ -1,7 +1,8 @@
-export const getObjectTest = (item) => {
+export const getObjectInfo = (data) => {
+
+
     return {
-        id: item.id,
-        title: item.title,
-        body: item.body,
+        img: data?.img,
+        text: { text: data?.text, symbols: data?.text.length, errorStatus: false},
     }
 }

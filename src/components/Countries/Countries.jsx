@@ -13,9 +13,7 @@ import MainButton from '../MainButton/MainButton';
 
 function Countries() {
 
-    const articles = useSelector(getArrayBlogList);
-
-    console.log(articles)
+    const articles = useSelector(getArrayBlogList).slice(0, 2);
 
     useEffect(() => {
 
@@ -36,8 +34,9 @@ function Countries() {
                 {articles.map(item => (
                     <CardMain key={item.id}
                         id={item.id}
-                        title={item.title}
-                        text={item.text} />
+                        name={item.name}
+                        text={item.text}
+                        img={item.img} />
                 ))}
                 {/* <CardMain id={2} reverse={true} /> */}
             </ul>

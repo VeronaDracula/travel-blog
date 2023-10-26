@@ -1,13 +1,12 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { Route, Routes, useHistory } from 'react-router-dom';
-import { useDispatch } from "react-redux";
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from "react-redux";
+
 
 import styles from './App.module.scss';
 
+import { getInfo } from '../../Redux/asyncThunks/getInfo';
 import { getArticles } from '../../Redux/asyncThunks/getArticles';
-
-import ProtectedRoute from "../ProtectedRoute/ProtectedRoute";
 import Content from '../Content/Content';
 import Article from '../Article/Article';
 import ArticleList from '../ArticleList/ArticleList';
@@ -23,7 +22,17 @@ function App() {
 
 
 
-  const fetchCart = async () => {
+  const fetchInfo = async () => {
+    try {
+      await dispatch(getInfo());
+
+    } catch (error) {
+      console.log('error\n', error);
+    }
+  };
+
+
+  const fetchArticles = async () => {
     try {
       await dispatch(getArticles());
 
@@ -34,9 +43,12 @@ function App() {
 
 
   useEffect(() => {
-    // fetchCart()
+
+    // fetchInfo();
+    // fetchArticles();
 
   }, [])
+
 
 
 
